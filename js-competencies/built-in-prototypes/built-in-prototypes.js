@@ -10,7 +10,10 @@
 //use the built-in array method .map
   
   //Code here
-
+function dragonMapper(arr) {
+  arr.map(e => `${e}...here be dragons`);
+  return arr;
+}
 
 
 //////////////////PROBLEM 2////////////////////
@@ -21,7 +24,9 @@
 //cookieLoversOnly should return the filtered array.
   
   //Code here
-
+function cookieLoversOnly(arr) {
+  arr.filter(e => e !== e.favoriteCookie);
+}
 
 //////////////////PROBLEM 3////////////////////
 
