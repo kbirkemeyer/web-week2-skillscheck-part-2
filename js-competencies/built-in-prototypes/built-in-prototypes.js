@@ -73,7 +73,9 @@ return arr.reduce((acc, curr) => acc * curr)
 // cipherize will return: "d"
 
   //Code here
-
+function cipherize() {
+  
+}
 
 
 //////////////////PROBLEM 6////////////////////
