@@ -12,11 +12,17 @@ var sunsetColors = ["brown", "purple", "pink", "red", "orange", "yellow"]
 
 //Code here
 function sunset() {
-    // let sunsetCopy = [...sunsetColors];
-    
-    sunsetCopy[0] = "blue";
-    return sunsetCopy;
+let newSunset = sunsetColors.slice(0);
+newSunset[0] = "blue";
+sunsetColors[0] = "blue";
+return newSunset;
 }
+
+// function sunset() {
+//     let newSunset = [...sunsetColors];
+//     sunsetCopy[0] = "blue";
+//     return sunsetCopy;
+// }
 
 //////////////////PROBLEM 2////////////////////
 
