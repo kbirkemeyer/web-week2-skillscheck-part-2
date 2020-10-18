@@ -54,7 +54,9 @@ function changeValue(arr, cb) {
 //Return the product.
   
   //Code here
-
+function findProduct(arr) {
+return arr.reduce((acc, curr) => acc * curr)
+}
 
 //////////////////PROBLEM 5////////////////////
 
