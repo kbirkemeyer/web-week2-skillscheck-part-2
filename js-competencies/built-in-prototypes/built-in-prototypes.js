@@ -11,8 +11,8 @@
   
   //Code here
 function dragonMapper(arr) {
-  arr.map(e => `${e}...here be dragons`);
-  return arr;
+  let dragonsHere = arr.map(e => `${e}...here be dragons`);
+  return dragonsHere;
 }
 
 
@@ -25,7 +25,7 @@ function dragonMapper(arr) {
   
   //Code here
 function cookieLoversOnly(arr) {
-  arr.filter(e => e !== e.favoriteCookie);
+  return arr.filter(e => "favoriteCookie" in e);
 }
 
 //////////////////PROBLEM 3////////////////////
@@ -40,7 +40,9 @@ function cookieLoversOnly(arr) {
 
 
   //Code here
-
+function changeValue(arr, cb) {
+  arr.forEach(cb);
+}
 
 
 //////////////////PROBLEM 4////////////////////
