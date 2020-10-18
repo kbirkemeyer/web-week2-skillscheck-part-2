@@ -73,8 +73,9 @@ return arr.reduce((acc, curr) => acc * curr)
 // cipherize will return: "d"
 
   //Code here
-function cipherize() {
-  
+function cipherize(arr, str) {
+  let index = arr.indexOf(str);
+  return str.charAt(index);
 }
 
 
@@ -86,3 +87,9 @@ function cipherize() {
 //apart, reversing it, and putting it back together again.
 
   //Code here
+function reverseMe(str) {
+  return str
+    .split("")
+    .reverse()
+    .join("");
+}
