@@ -108,7 +108,7 @@ var almostThere = descent.remainingElevation;
 // a variable named finalDescent.
 
 // CODE HERE
-let finalDescent = almostThere;
+var finalDescent = almostThere;
 
 // Now, uncomment the best answers:
 

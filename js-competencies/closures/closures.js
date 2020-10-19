@@ -81,7 +81,7 @@ function careerUpdater(name, city, job) {
 //function in a variable called "annePromotion"
 
 //Code here
-var annePromotion = careerUpdater("Anne", "Windsor", "Lady-in-Waiting");
+var annePromotion = careerUpdater("Anne", "Windsor", "Lady-In-Waiting");
 
 //Call annePromotion with the arguments "London", "Queen". Store the 
 //result in a variable called "anneResumeEntry1"

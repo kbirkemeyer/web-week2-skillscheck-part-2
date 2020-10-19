@@ -27,11 +27,11 @@ var book2 = {
 // variable named book1CheckOut.
 
 // CODE HERE
-
+var book1CheckOut = book1.checkOut.call(book1);
 
 // What is the context of running book1.checkOut()?
 // var q1Context = "explicit"
-// var q1Context = 'implicit';
+var q1Context = 'implicit';
 // var q1Context = "default"
 // var q1Context = "new"
 
@@ -41,10 +41,10 @@ var book2 = {
 // variable named book2CheckOut.
 
 // CODE HERE
-
+let book2CheckOut = checkOut.call(book2);
 
 // What is the context of running the function checkOut on book1?
-// var q2Context = 'explicit';
+var q2Context = 'explicit';
 // var q2Context = "implicit"
 // var q2Context = "default"
 // var q2Context = "new"
@@ -55,12 +55,12 @@ var book2 = {
 // variable named globalCheckOut.
 
 // CODE HERE
-
+let globalCheckOut = checkOut.call();
 
 // What is the context of running checkOut()?
 // var q3Context = "explicit"
 // var q3Context = "implicit"
-// var q3Context = 'default';
+var q3Context = 'default';
 // var q3Context = "new"
 
 
@@ -69,11 +69,11 @@ var book2 = {
 // as the argument. Save the result to a variable named book2CheckOut2.
 
 // CODE HERE
-
+let book2CheckOut2 = book1.checkOut.apply(book2);
 
 // What is the context of applying the book1 method
 // checkOut to book2?
-// var q4Context = 'explicit';
+var q4Context = 'explicit';
 // var q4Context = "implicit"
 // var q4Context = "default"
 // var q4Context = "new"
@@ -99,7 +99,7 @@ function updatePerson(name, age, title) {
 // England"; save the result to a variable named queenAnne.
 
 //Code here
-
+let queenAnne = updatePerson.call(person1, "Anne Bolelyn", 30, "Queen of England");
 
 // Q2:
 // Use the method .apply to run updatePerson on person2;
@@ -107,7 +107,7 @@ function updatePerson(name, age, title) {
 // Queen"; save the result to a variable named queenCatherine.
 
 //Code here
-
+let queenCatherine = updatePerson.apply(person2, "Catherine of Aragon", 37, "Former Queen");
 
 // /////////////////Problem 3//////////////////
 // Given the constructor function below, answer
@@ -147,7 +147,7 @@ var hampton = new Castle('Hampton Court', 'England', 'red', 'bricks', false);
 
 // What was 'this' when you ran chambord.getCastle()?
 
-// var getCastleContext = "Castle"
+var getCastleContext = "Castle"
 // var getCastleContext = 'chambord';
 // var getCastleContext = "new"
 // var getCastleContext = "window"
