@@ -29,7 +29,6 @@ function invokesCallbacks(num, cb1, cb2) {
   var greeting;
 
   function timedGreeting(callback){
-  greeting = setTimeout(callback, 
-    1000);
+  greeting = setTimeout(callback, 1000);
   }
 
