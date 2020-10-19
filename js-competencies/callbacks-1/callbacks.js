@@ -6,7 +6,8 @@
 function stringItOut(arr) {
   arr.forEach(e => {
     if(isNaN(e)){
-      arr.sort();
+      arr.sort()
+      arr.reverse();
     } else{
       arr.sort((e, b) => b - e);
     }
