@@ -81,26 +81,26 @@ function careerUpdater(name, city, job) {
 //function in a variable called "annePromotion"
 
 //Code here
-
+var annePromotion = careerUpdater("Anne", "Windsor", "Lady-in-Waiting");
 
 //Call annePromotion with the arguments "London", "Queen". Store the 
 //result in a variable called "anneResumeEntry1"
 
 //Code here
-
+var anneResumeEntry1 = annePromotion("London", "Queen");
 
 //Then, call annePromotion again with just the argument 
 //"Tower of London dungeons" and save it to a variable called
 //"anneResumeEntry2"
 
 //Code here
-
+var anneResumeEntry2 = annePromotion("Tower of London dungeons");
 
 //Based on the instance of annePromotion, and the lack of a newJob
 //argument, what should Anne's job be after creating anneResumeEntry2? 
 //Uncomment the answer.
 
-// var annesJobInDungeon = "Lady-In-Waiting"
+var annesJobInDungeon = "Lady-In-Waiting"
 // var annesJobInDungeon = "Queen"
 // var annesJobInDungeon = "undefined"
 
@@ -110,9 +110,10 @@ function careerUpdater(name, city, job) {
 //called "claraPromotion".
 
 //Code here
-
+var claraPromotion = careerUpdater("Clara", "Salt Lake City", "student")
 
 //Then, call claraPromotion with the arguments "Seattle", "programmer"
 //and store it in a variable called "claraResumeEntry"
 
 //Code here
+var claraResumeEntry = claraPromotion("Seattle", "programmer")
