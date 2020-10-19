@@ -11,7 +11,12 @@
 //time + ", " + heroine + " defeated the evil wizard with " + magicItem
 
 //Code here
-
+function fairytale(heroine, magicItem) {
+  let time = "A long time ago";
+  return function story() {
+  return `${time}, ${heroine} defeated the evil wizard with ${magicItem}`;
+  }
+}
 
 //////////////////PROBLEM 2////////////////////
 
