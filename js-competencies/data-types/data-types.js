@@ -36,7 +36,7 @@ let myInt = 6.05;
 //the string "I am a function!"
 
 //Code here
-function myfunction() {
+function myFunction() {
     let string = "I am a function!"
     return string;
 }
@@ -98,13 +98,19 @@ function undefiner(array) {
 //the parameter divided by 2.
 
 //Code here
-
+function nananan(param) {
+    if((param / 2) !== NaN){
+        return (param / 2);
+    } else {
+        return `FLYING NOCTURNAL MAMMAL MAN!`;
+    }
+}
 
 //Now, call nananan with the value NaN, and store the 
 //result of the function call in a variable called "na".
 
 //Code here
-
+var na = nananan(NaN);
 
 ///////////////////Problem 12//////////////////
 //Create a function called arrayChecker that takes 
@@ -112,7 +118,13 @@ function undefiner(array) {
 //if the parameter is an array, and false otherwise.
 
 //Code here
-
+function arrayChecker(param) {
+    if(Array.isArray(param) === true){
+        return true; 
+    } else {
+        return false;
+        }
+}
 
 ///////////////////Problem 13//////////////////
 //Create a function called numFromString that takes 
@@ -121,7 +133,9 @@ function undefiner(array) {
 //Return that base 10 number.
 
 //Code here
-
+function numFromString(string) {
+    return parseInt(string, 10);
+}
 
 ///////////////////Problem 14//////////////////
 //Create a function called makeItAString that takes 
@@ -130,33 +144,35 @@ function undefiner(array) {
 //Return that string.
 
 //Code here
-
+function makeItAString(param) {
+    return param.toString();
+}
 
 ///////////////////Problem 15//////////////////
 //Uncomment the correct answers below
 
 //What will 100 || 0 be evaluted to?
-// var answer1 = 100
+var answer1 = 100
 // var answer1 = 0
 
 //What will "Hello" && "Goodbye" be evaluted to?
 // var answer2 = "Hello"
-// var answer2 = "Goodbye"
+var answer2 = "Goodbye"
 
 //What will 14 + "" be evaluted to?
-// var answer3 = "14"
+var answer3 = "14"
 // var answer3 = 14
 
 //What will "14" - 10 be evaluted to?
 // var answer4 = "14"
 // var answer4 = "1410"
-// var answer4 = 4
+var answer4 = 4
 // var answer4 = 1410
 
 //What will ["anne", "bob"] + ["charlie"] be evaluted to?
 // var answer5 = ["anne", "bob", "charlie"]
 // var answer5 = "annebobcharlie"
-// var answer5 = "anne,bobcharlie"
+var answer5 = "anne,bobcharlie"
 // var answer5 = "anne,bob,charlie"
 
 
@@ -176,25 +192,25 @@ myCopiedStr += " What a beautiful day!"
 
 //What is the value of myArr?
 // var valMyArr = [1, 2, 3, 4]
-// var valMyArr = [1, 25, 3, 4]
+var valMyArr = [1, 25, 3, 4]
 
 //What is the value of myStr?
-// var valMyStr = "Hello, world!"
+var valMyStr = "Hello, world!"
 // var valMyStr = "Hello, world! What a beautiful day!"
 
 //What is the value of myCopiedArr?
 // var valMyCopiedArr = [1, 2, 3, 4]
-// var valMyCopiedArr = [1, 25, 3, 4]
+var valMyCopiedArr = [1, 25, 3, 4]
 
 //What is the value of myCopiedStr?
 // var valMyCopiedStr = "Hello, world!"
-// var valMyCopiedStr = "Hello, world! What a beautiful day!"
+var valMyCopiedStr = "Hello, world! What a beautiful day!"
 
 //Are arrays copied by reference, or by value?
-// var arraysCopiedBy = "reference"
+var arraysCopiedBy = "reference"
 // var arraysCopiedBy = "value"
 
 //Are string copied by reference, or by value?
 // var stringsCopiedBy = "reference"
-// var stringsCopiedBy = "value"
+var stringsCopiedBy = "value"
 
