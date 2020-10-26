@@ -5,7 +5,7 @@
 // var jsDataTypes = ["bool", "string", "object", "integer", "function", "undefined"]
 // var jsDataTypes = ["boolean", "string", "object", "int", "function"]
 // var jsDataTypes = ["bool", "string", "object", "integer", "function"]
-// var jsDataTypes = ["boolean", "string", "object", "number", "function", "undefined"]
+var jsDataTypes = ["boolean", "string", "object", "number", "function", "undefined"]
 
 
 ///////////////////Problem 2//////////////////
@@ -13,7 +13,7 @@
 //null to a boolean - based on whether or not you like 
 //chocolate!
 
-var iLikeChocolate = null
+var iLikeChocolate = true;
 
 
 ///////////////////Problem 3//////////////////
@@ -21,6 +21,7 @@ var iLikeChocolate = null
 //called myString
 
 //Code here
+let myString = 'Chickpea';
 
 
 ///////////////////Problem 4//////////////////
@@ -28,14 +29,17 @@ var iLikeChocolate = null
 //called myInt
 
 //Code here
-
+let myInt = 6.05;
 
 ///////////////////Problem 5//////////////////
 //Create a function called myFunction that returns
 //the string "I am a function!"
 
 //Code here
-
+function myfunction() {
+    let string = "I am a function!"
+    return string;
+}
 
 ///////////////////Problem 6//////////////////
 //Create an object called myObject that has a 
@@ -44,7 +48,13 @@ var iLikeChocolate = null
 //property.
 
 //Code here
-
+let myObject = {
+    name: 'Chickpea',
+    team: 'Brown Dog Team',
+    whatTeam: function() {
+        return myObject.team;
+    }
+}
 
 ///////////////////Problem 7//////////////////
 //Create an array called myArray that contains:
@@ -52,7 +62,7 @@ var iLikeChocolate = null
 //an array literal that contains 4, 5
 
 //Code here
-
+let myArray = [1, 'two', {three: 3}, [4, 5]]
 
 ///////////////////Problem 8//////////////////
 //Make a function called whatAmI that takes in one 
@@ -60,13 +70,15 @@ var iLikeChocolate = null
 //return the data type of the mystery parameter.
 
 //Code here
-
+function whatAmI(mystery) {
+    return typeof(mystery);
+}
 
 ///////////////////Problem 9//////////////////
 //Create a variable called theVoid. Make it null.
 
 //Code here
-
+let theVoid = null;
 
 ///////////////////Problem 10//////////////////
 //Create a function called undefiner that takes in 
@@ -74,7 +86,10 @@ var iLikeChocolate = null
 //to undefined. undefiner should return the array.
 
 //Code here
-
+function undefiner(array) {
+    array.splice(1, 1, undefined)
+    return array;
+}
 
 ///////////////////Problem 11//////////////////
 //Create a function called nananan that takes in 
