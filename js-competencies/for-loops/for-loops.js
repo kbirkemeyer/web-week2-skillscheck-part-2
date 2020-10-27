@@ -41,7 +41,10 @@
 //the string ' frog' onto the element. Then return the array. NOTE: use
 //the variable i for your for loop
 
-  function leapFrog(arr) {
+function leapFrog(arr) {
     //Code here
-
+    for(let i = 0; i < arr.length; i+=2) {
+      arr[i] = arr[i] + " frog";
+    };
+    return arr;
   }
