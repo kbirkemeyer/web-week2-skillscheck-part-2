@@ -56,8 +56,9 @@ const hello = (name) => {
 
 //Code here
 const fun = (string) => {
-  return `${string}!!!!!`
+  return `${string}!!!!!`;
 }
+let funTimes = fun('Yay');
 
 ///////////////////Problem 5//////////////////
 //Finish the function 'climb' below. Use the built-in local
