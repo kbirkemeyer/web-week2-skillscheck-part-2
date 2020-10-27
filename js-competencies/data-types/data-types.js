@@ -99,10 +99,10 @@ function undefiner(array) {
 
 //Code here
 function nananan(param) {
-    if((param / 2) !== NaN){
-        return (param / 2);
-    } else {
+    if(isNaN(param / 2)){
         return `FLYING NOCTURNAL MAMMAL MAN!`;
+    } else {
+        return (param / 2);
     }
 }
 
