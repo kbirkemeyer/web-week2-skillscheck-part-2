@@ -97,8 +97,8 @@ let cleanUp = (string) => {
 function whatOcean(obj) {
 
   //Code here
-  // const obj.ocean = ocean;
-  return ocean;
+  const {ocean} = obj;
+  return obj.ocean;
 }
 
 //////////////////PROBLEM 8////////////////////
@@ -112,5 +112,5 @@ function whatOcean(obj) {
 //"spaghetti & liver with onions"
 
 function leftovers(string, ...theArgs) {
-  return `${string} & ${theArgs}`
+  return `${string} & ${theArgs[theArgs.length - 1]}`
 }
