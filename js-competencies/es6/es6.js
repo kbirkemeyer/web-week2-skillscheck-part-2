@@ -84,7 +84,9 @@ var answers = ["Example B", "Example C", "Example D"]
 //string without spaces.
 
 //Code here
-
+let cleanUp = (string) => {
+  return string.split(' ').join('')
+}
 
 //////////////////PROBLEM 7////////////////////
 //Finish the function below. Assume that the
@@ -95,7 +97,8 @@ var answers = ["Example B", "Example C", "Example D"]
 function whatOcean(obj) {
 
   //Code here
-  
+  // const obj.ocean = ocean;
+  return ocean;
 }
 
 //////////////////PROBLEM 8////////////////////
@@ -108,4 +111,6 @@ function whatOcean(obj) {
 //plus the last element of the rest parameter, like so:
 //"spaghetti & liver with onions"
 
-
+function leftovers(string, ...theArgs) {
+  return `${string} & ${theArgs}`
+}
