@@ -70,9 +70,9 @@ var sampleOutput = [
 
 //CODE HERE
 function keyAccessor(arr, obj) {
-  for(let i = 0; i < arr.length; i++) {
-
-  }
+  let newArray = [];
+  arr.forEach(e => newArray.push(obj[e]))
+  return newArray;
 }
 
 
