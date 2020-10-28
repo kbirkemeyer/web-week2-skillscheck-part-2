@@ -79,12 +79,18 @@ let funTimes = fun('Yay');
 //Otherwise, return "Let's set up the belay rope before we climb."
 
 function climb() {
-  //What is the arguments variable? Try calling climb
-  //and passing in ("Ellie", true) and see what is logged
-  //to the console.
   console.log('function climb\'s local arguments var - ', arguments)
 
   //CODE HERE - DO NOT TOUCH THE CODE ABOVE!
-
+  if(typeof arguments[0] == 'string' && !arguments[1]) { 
+    return "On belay?";
+  } else if(typeof arguments[0] == 'string' && arguments[1]) {
+    return "Climbing!";
+  } else {
+    return "Let's set up the belay rope before we climb.";
+  }
 }
 
+  //What is the arguments variable? Try calling climb
+  //and passing in ("Ellie", true) and see what is logged
+  //to the console.
