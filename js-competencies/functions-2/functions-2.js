@@ -131,8 +131,8 @@ var answer5 = ["funcA"]
 
 //Code here
 function janus(boolean) {
-  let left = function() {return "Looking backwards.";}
-  let right = function() {return "Looking forwards.";}
+  let left = function() {return "Looking backwards";}
+  let right = function() {return "Looking forwards";}
   if(boolean === true) {
     return right;
   } else {
