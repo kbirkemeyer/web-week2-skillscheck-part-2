@@ -4,11 +4,12 @@
 //Create a prototype for a String called reverse that returns the string but, like, reversed.
 
 //Code here
-String.prototype.reverse = (string) => {
-  string.split()
+String.prototype.reverse = function() {
+  return (
+    this.split("")
     .reverse()
-    .join();
-  return string;
+    .join("")
+  )
 }
 
 //////////////////PROBLEM 2////////////////////
@@ -30,13 +31,13 @@ function Person(name, age) {
 Person.prototype.drinkCoffee = function() {
   this.energy += 10;
   this.linesOfCode += 50; 
-  this.qualityOfCode -= 5;
-  return Person;
+  this.qualityOfCode -= 1;
+  return this;
 }
 
-Person.prototype.readDocumentation = function () {
+Person.prototype.readDocumentation = function() {
   this.energy -= 20;
-  this.linesOfCode -= 50; 
-  this.qualityOfCode += 5;
-  return Person;
+  this.linesOfCode -= 30; 
+  this.qualityOfCode += 3;
+  return this;
 }
